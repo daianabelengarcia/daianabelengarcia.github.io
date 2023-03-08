@@ -1,0 +1,87 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+  width: auto;
+  margin: 20px 40px;
+  padding: 20px;
+  background-image: url(../img/fondo.jpg);
+}
+
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 20px;
+}
+
+header {
+  background-color: rgba(156, 142, 128, 0.1);
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.columna1 {
+  width: 60%;
+}
+
+.columna2 {
+  max-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .columna1 {
+    width: 100%;
+  }
+  button {
+    width: 70%;
+  }
+}
+
+.foto {
+  width: 100%;
+  border-radius: 30%;
+}
+
+body a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+body a:hover {
+  color: rgb(236, 192, 72);
+}
+
+button {
+  font-family: 'Oswald', sans-serif;
+  background-color: rgb(156, 142, 128);
+  border-color: rgb(110, 110, 110);
+  margin: 20px;
+}
+
+footer,
+nav {
+  text-align: center;
+}
+
+/* Button up */
+.simplescrollup__button {
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	transition: 1s all;
+	z-index: 10000;
+}
+
+.simplescrollup__button--show {
+	transform: translateX(0);
+}
+
+.simplescrollup__button--hide {
+	transform: translateX(100px);
+}
